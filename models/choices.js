@@ -1,5 +1,6 @@
 const Sequelize=require('sequelize')
 const db=require('../config/database')
+const Question = require('./question')
 
 const Choice=db.define('choices',{
     choice_body:{
@@ -13,3 +14,6 @@ const Choice=db.define('choices',{
         type:Sequelize.BOOLEAN
     },
 })
+
+
+module.exports=Choice
